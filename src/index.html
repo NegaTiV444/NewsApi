@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>News App</title>
+</head>
+<body>
+<header>
+    <section class="app-header">
+        <h1>NEWS</h1>
+    </section>
+</header>
+<main class="main">
+    <div class="scroll">
+        <section class="app-topics-list" id="app-topics-list">
+        </section>
+    </div>
+    <section class="current-source-block" id="current-source-block">
+        <h2 id="current-source-text"></h2>
+    </section>
+    <section class="app-filter">
+        <div class="filter-block">
+            <input type="text" id="filter-input" class="filter-input">
+            <button id="filter-button" class="filter-button">Filter</button>
+        </div>
+    </section>
+    <section class="not-found-block" id="not-found-block">
+        <h2 id="not-found-text">NOT FOUND</h2>
+    </section>
+    <section class="app-news-list" id="app-news-list">
+    </section>
+    <div class="loading">
+        <button id="btn-load-more">Load more</button>        
+    </div>
+</main>
+<footer>
+    <p>Powered by <a href="https://newsapi.org/">NewsAPI</a></p>
+</footer>
+<template id="news-item-template">
+    <div class="news-item">
+        <div class="item-image">
+            <img class="image" src="" alt="news-image"/>
+        </div>
+        <div class="item-content">
+            <h2 class="item-title"></h2>
+            <h3 class="item-source"></h3>
+            <p class="item-text"></p>
+            <a class="item-link" href="#">Read more...</a>
+        </div>
+    </div>
+</template>
+</body>
+</html>
